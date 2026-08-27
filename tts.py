@@ -14,11 +14,10 @@ import os
 import edge_tts
 from pydub import AudioSegment
 
-VOICE_MAP = {
-    "Ana": os.environ.get("EDGE_TTS_VOICE_ANA", "pt-BR-FranciscaNeural"),
-    "Bruno": os.environ.get("EDGE_TTS_VOICE_BRUNO", "pt-BR-AntonioNeural"),
+VOICE_MAP = { 
+    "Ana": os.environ.get("EDGE_TTS_VOICE_ANA") or "pt-BR-FranciscaNeural", 
+    "Bruno": os.environ.get("EDGE_TTS_VOICE_BRUNO") or "pt-BR-AntonioNeural", 
 }
-
 
 async def _synthesize_line(text: str, voice: str, out_path: str) -> None:
     communicate = edge_tts.Communicate(text, voice)
