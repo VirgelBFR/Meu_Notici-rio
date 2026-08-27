@@ -2,8 +2,8 @@
 Orquestra o pipeline completo do podcast de notícias:
 
 1. Coleta notícias recentes dos feeds RSS (feeds.txt)
-2. Gera o roteiro de bate-papo entre dois jornalistas (Claude)
-3. Sintetiza o áudio MP3 (ElevenLabs)
+2. Gera o roteiro do boletim, narrado por um apresentador (Google Gemini)
+3. Sintetiza o áudio MP3 (gTTS)
 4. Salva o MP3 no Google Drive
 5. Atualiza o feed RSS do podcast (docs/feed.xml) para o Spotify puxar
 
@@ -50,7 +50,7 @@ def main():
     print("5/5 — Atualizando feed RSS do podcast (Spotify)...")
     episode_title = f"Notícias de {today}"
     episode_description = (
-        f"Resumo em bate-papo das principais notícias de {today}, "
+        f"Boletim com as principais notícias de {today}, "
         f"com base em {len(news)} matérias de {len(feed_urls)} fontes."
     )
     add_episode(mp3_path, episode_title, episode_description)
