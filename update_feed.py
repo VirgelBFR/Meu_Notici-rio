@@ -25,8 +25,8 @@ PODCAST_DESCRIPTION = "Resumo diário das principais notícias, direto ao ponto.
 PODCAST_LANGUAGE = "pt-br"
 PODCAST_AUTHOR = "Seu Nome"
 PODCAST_EMAIL = "seu-email@exemplo.com"
-PODCAST_IMAGE_URL = "https://SEU_USUARIO.github.io/podcast-noticias/cover.jpg"
-SITE_BASE_URL = "https://SEU_USUARIO.github.io/podcast-noticias"
+PODCAST_IMAGE_URL = "https://VirgelBFR.github.io/podcast-noticias/cover.jpg"
+SITE_BASE_URL = "https://VirgelBFR.github.io/podcast-noticias"
 # ===============================================
 
 EPISODES_JSON = "data/episodes.json"
