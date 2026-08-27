@@ -1,10 +1,10 @@
 """
 Usa a API do Google Gemini (camada gratuita) para transformar a lista de
-notícias coletadas num roteiro de podcast: um bate-papo natural entre
-dois jornalistas.
+notícias coletadas num roteiro de podcast: um boletim narrado por um único
+apresentador (formato ajustado ao gTTS, que só oferece uma voz).
 
-Saída: lista de falas no formato [{"speaker": "Ana", "text": "..."}, ...]
-para facilitar o envio linha a linha ao TTS (cada fala pode usar uma voz).
+Saída: lista de blocos no formato [{"speaker": "Apresentador", "text": "..."}, ...]
+(um bloco por tema/notícia), para facilitar o envio ao TTS em partes.
 """
 
 import json
@@ -19,22 +19,24 @@ MODEL = "gemini-3.6-flash"
 SYSTEM_PROMPT = """\
 Você é um roteirista de podcast de notícias brasileiro. Sua tarefa é pegar uma
 lista de notícias (título, resumo, fonte) e transformar em um roteiro de
-bate-papo natural, dinâmico e informativo entre dois jornalistas fictícios:
-Ana e Bruno.
+boletim narrado por um único apresentador, em tom natural e informativo —
+como um noticiário de rádio matinal.
 
 Regras:
 - Comece com uma saudação curta de abertura do programa.
 - Cubra as notícias mais relevantes agrupadas por tema (política, economia,
   tecnologia, etc.), com transições naturais entre os blocos.
-- Os jornalistas devem comentar, contextualizar e, quando fizer sentido,
-  discordar ou trazer nuances — não apenas ler a notícia em voz alta.
+- Não apenas leia a notícia: contextualize, explique o porquê de importar,
+  traga uma pitada de análise quando fizer sentido.
 - Tom: informativo mas leve, como um podcast de notícias diário.
 - Termine com um encerramento curto e convite para o próximo episódio.
 - Duração alvo: equivalente a uns 6-10 minutos falados (aproximadamente
   900 a 1400 palavras no total).
 - Responda APENAS com um JSON válido, sem markdown, sem texto fora do JSON,
-  no formato:
-  [{"speaker": "Ana", "text": "..."}, {"speaker": "Bruno", "text": "..."}, ...]
+  no formato (todo bloco usa sempre "speaker": "Apresentador"):
+  [{"speaker": "Apresentador", "text": "..."}, {"speaker": "Apresentador", "text": "..."}, ...]
+  Divida o texto em vários blocos (um por bloco temático) em vez de um bloco
+  único gigante — isso ajuda a geração do áudio.
 """
 
 
