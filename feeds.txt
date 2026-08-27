@@ -1,0 +1,6 @@
+# Um feed RSS por linha. Linhas começando com # são ignoradas.
+# Para adicionar um novo feed, basta colar a URL abaixo.
+
+https://g1.globo.com/dynamo/politica/mensalao/rss2.xml
+https://g1.globo.com/dynamo/economia/rss2.xml
+https://g1.globo.com/dynamo/tecnologia/rss2.xml
