@@ -14,7 +14,7 @@ from google import genai
 # Modelo gratuito no Gemini API (camada free). Se o Google aposentar este
 # modelo, troque por outro "flash"/"flash-lite" atual — confira em
 # ai.google.dev/gemini-api/docs/models qual está disponível na camada grátis.
-MODEL = "gemini-2.5-flash"
+MODEL = "gemini-3.6-flash"
 
 SYSTEM_PROMPT = """\
 Você é um roteirista de podcast de notícias brasileiro. Sua tarefa é pegar uma
