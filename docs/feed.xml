@@ -4,21 +4,29 @@
     <title>Nome do Seu Podcast</title>
     <description>Resumo diário das principais notícias, direto ao ponto.</description>
     <language>pt-br</language>
-    <link>https://VirgelBFR.github.io/Meu_Notici-rio</link>
+    <link>https://VirgelBFR.github.io/Meu_noticiario</link>
     <itunes:author>Seu Nome</itunes:author>
     <itunes:owner>
       <itunes:name>Seu Nome</itunes:name>
       <itunes:email>seu-email@exemplo.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://VirgelBFR.github.io/Meu_Notici-rio/cover.jpg" />
+    <itunes:image href="https://VirgelBFR.github.io/Meu_noticiario/cover.jpg" />
     <itunes:category text="News" />
     <itunes:explicit>false</itunes:explicit>
     <image>
-      <url>https://VirgelBFR.github.io/Meu_Notici-rio/cover.jpg</url>
+      <url>https://VirgelBFR.github.io/Meu_noticiario/cover.jpg</url>
       <title>Nome do Seu Podcast</title>
-      <link>https://VirgelBFR.github.io/Meu_Notici-rio</link>
+      <link>https://VirgelBFR.github.io/Meu_noticiario</link>
     </image>
     
+    <item>
+      <title>Notícias de 28/08/2026</title>
+      <description>Boletim com as principais notícias de 28/08/2026, com base em 15 matérias de 3 fontes.</description>
+      <pubDate>Fri, 28 Aug 2026 18:09:25 +0000</pubDate>
+      <enclosure url="https://VirgelBFR.github.io/Meu_noticiario/audio/2026-08-28-1809.mp3" length="9234477" type="audio/mpeg" />
+      <guid isPermaLink="false">2026-08-28-1809</guid>
+      <itunes:duration></itunes:duration>
+    </item>
     <item>
       <title>Notícias de 28/08/2026</title>
       <description>Boletim com as principais notícias de 28/08/2026, com base em 15 matérias de 3 fontes.</description>
