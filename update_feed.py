@@ -20,11 +20,11 @@ from email.utils import format_datetime
 from xml.sax.saxutils import escape
 
 # ==== PREENCHA COM OS DADOS DO SEU PODCAST ====
-PODCAST_TITLE = "Nome do Seu Podcast"
+PODCAST_TITLE = "Meu Noticiário"
 PODCAST_DESCRIPTION = "Resumo diário das principais notícias, direto ao ponto."
 PODCAST_LANGUAGE = "pt-br"
-PODCAST_AUTHOR = "Seu Nome"
-PODCAST_EMAIL = "seu-email@exemplo.com"
+PODCAST_AUTHOR = "Virgel"
+PODCAST_EMAIL = "marcelinovasconcelos88@gmail.com"
 PODCAST_IMAGE_URL = "https://VirgelBFR.github.io/Meu_noticiario/cover.jpg"
 SITE_BASE_URL = "https://VirgelBFR.github.io/Meu_noticiario"
 # ===============================================
