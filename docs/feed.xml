@@ -20,6 +20,14 @@
     </image>
     
     <item>
+      <title>Notícias de 29/08/2026</title>
+      <description>Boletim com as principais notícias de 29/08/2026, com base em 12 matérias de 3 fontes.</description>
+      <pubDate>Sat, 29 Aug 2026 13:56:39 +0000</pubDate>
+      <enclosure url="https://VirgelBFR.github.io/Meu_noticiario/audio/2026-08-29-1356.mp3" length="11356845" type="audio/mpeg" />
+      <guid isPermaLink="false">2026-08-29-1356</guid>
+      <itunes:duration></itunes:duration>
+    </item>
+    <item>
       <title>Notícias de 28/08/2026</title>
       <description>Boletim com as principais notícias de 28/08/2026, com base em 15 matérias de 3 fontes.</description>
       <pubDate>Fri, 28 Aug 2026 18:32:20 +0000</pubDate>
